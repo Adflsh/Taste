@@ -1,0 +1,14 @@
+#Camera格式总结
+
+1.图片格式
+  每个Image都有自己的格式，这个格式由ImageFormat确定，对应YUV420，ImageFormat在API21添加了YUV_420_888类型，代表YUV420格式的集合
+  (NV21,NV12)。
+2.Android 拍照流程：
+   start-> startBackGroundThread->init surface-> set camera Id-> setImageReader->openCamera->
+   Camera onOpened(CameraDevice.state Callback)->createCaptureSession->onConfigured(CameraCaptureSession.stateCallback)
+   ->setRepeatingRequest->onCaptureCompleted;
+3.Camera2几个比较重要的类
+  CameraManager：管理手机上的所有摄像头设备，它的主要作用是获取摄像头列表和打开指定摄像头。
+  CameraDevice ：具体的摄像头设备，它有一系列参数(预览尺寸，拍照尺寸),可以通过CameraManager的getCameraCharacterstics()方法获取。
+  CameraCaptureSession:相机捕获对话，用于处理拍照和预览的工作。
+  CaptureRequest:捕获请求，定义输出缓冲区以及显示界面(TextureView和SurfaceView).
