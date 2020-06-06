@@ -1,0 +1,5 @@
+#ContraintLayout使用小结
+1.ContraintLayout的用法和RelativeLayout相似，没有Layout_gravity
+  子控件的位置通过app:layout_constraintLeft_toLeftOf   app:layout_constraintTop_toTopOf
+  的约束来实现
+2.对于Margin属性，同样有要求。比如，一个控件相对于父布局，在Right，那么marginRight才能生效。

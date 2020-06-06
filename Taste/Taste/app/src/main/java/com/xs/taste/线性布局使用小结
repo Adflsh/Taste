@@ -1,0 +1,19 @@
+#线性垂直布局
+1、当父布局是线性垂直布局时，子控件的layout_gravity属性只有水平方向才生效
+   android:layout_gravity=center ,子控件水平居中
+   android:layout_gravity=left,子控件居左
+   android:layout_gravity=right,子控件居右
+
+2.当父布局为线性垂直布局时
+   android:layout_marginTop,android:layout_marginLeft还可以使用。
+
+
+3.线性垂直布局，子控件如何居于底部
+     android:layout_gravity=bottom是无效的，在垂直方向上默认是从上到下开始布局的。
+
+4.对于Margin属性，
+  在线性垂直布局中，MarginBottom是无效的。
+
+
+
+

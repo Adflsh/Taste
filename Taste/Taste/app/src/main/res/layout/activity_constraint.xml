@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginLeft="30px"
+        android:layout_marginTop="20dp"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="TextView1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="123px"
+        android:id="@+id/textView6"
+        android:text="texyView6"
+        app:layout_constraintLeft_toRightOf="@+id/textView1"
+        app:layout_constraintTop_toTopOf="parent"
+        ></TextView>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:text="textView7"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:layout_constraintTop_toBottomOf="@id/textView6"
+        app:layout_constraintLeft_toRightOf="@id/textView1"
+        ></TextView>
+
+
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="TextView2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="TextView3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></TextView>
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="TextView4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"></TextView>
+
+
+    <TextView
+        android:layout_width="100px"
+        android:layout_height="100px"
+        android:text="全局居中"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
