@@ -11,7 +11,7 @@
 3.线性垂直布局，子控件如何居于底部
      android:layout_gravity=bottom是无效的，在垂直方向上默认是从上到下开始布局的。
 
-4.对于Margin属性，
+4.对于Margin属性
   在线性垂直布局中，MarginBottom是无效的。
 
 

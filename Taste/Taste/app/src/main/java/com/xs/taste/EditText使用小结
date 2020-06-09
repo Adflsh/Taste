@@ -1,6 +1,15 @@
 #EditText的使用
 1.掌握EditText的基本属性的用法
 
-2.EditText自定义样式
+
+
+2.EditText边框设计
+  主要就是设置EditText的background属性，来设置不同的背景框。
+  1.EditText默认样式
+  2.EditText去掉全部边框样式
+  3.EditText自定义边框样式有2种，一个是4个面都有边框，采用android:background="view_board"这种边框
+  如果边框样式只有一条下滑线，采用android:background="view_line_board"这种下滑线边框
+  也可以采用demo中的去掉边框样式+下滑线的方式来实现。
+
 
 3.软键盘控制。
